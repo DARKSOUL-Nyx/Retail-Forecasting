@@ -1,0 +1,574 @@
+[2025-07-28T11:18:36.849+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:18:36.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:18:36.858+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:18:36.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:18:36.917+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:18:36.908+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:18:36.928+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:18:37.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.225 seconds
+[2025-07-28T11:19:07.261+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:19:07.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:19:07.266+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:19:07.265+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:19:07.286+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:19:07.282+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:19:07.288+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:19:07.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.065 seconds
+[2025-07-28T11:19:37.436+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:19:37.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:19:37.440+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:19:37.439+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:19:37.458+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:19:37.454+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:19:37.460+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:19:37.488+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.060 seconds
+[2025-07-28T11:20:07.634+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:20:07.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:20:07.637+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:20:07.636+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:20:07.653+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:20:07.650+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:20:07.655+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:20:07.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.048 seconds
+[2025-07-28T11:20:37.907+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:20:37.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:20:37.910+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:20:37.910+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:20:37.928+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:20:37.924+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:20:37.929+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:20:37.954+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.053 seconds
+[2025-07-28T11:21:08.159+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:21:08.160+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:21:08.162+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:21:08.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:21:08.179+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:21:08.175+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:21:08.180+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:21:08.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.050 seconds
+[2025-07-28T11:21:38.440+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:21:38.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:21:38.442+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:21:38.442+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:21:38.458+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:21:38.454+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:21:38.459+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:21:38.479+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.046 seconds
+[2025-07-28T11:22:08.695+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:22:08.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:22:08.698+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:22:08.697+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:22:08.710+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:22:08.707+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:22:08.711+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:22:08.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.045 seconds
+[2025-07-28T11:22:38.945+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:22:38.946+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:22:38.950+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:22:38.949+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:22:38.969+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:22:38.965+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:22:38.970+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:22:38.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.061 seconds
+[2025-07-28T11:23:09.131+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:23:09.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:23:09.134+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:23:09.133+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:23:09.151+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:23:09.146+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:23:09.153+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:23:09.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.053 seconds
+[2025-07-28T11:23:39.445+0000] {processor.py:161} INFO - Started process (PID=214) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:23:39.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:23:39.448+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:23:39.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:23:39.464+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:23:39.461+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:23:39.465+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:23:39.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.048 seconds
+[2025-07-28T11:24:09.702+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:24:09.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:24:09.705+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:24:09.705+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:24:09.718+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:24:09.715+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:24:09.720+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:24:09.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.041 seconds
+[2025-07-28T11:24:40.045+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:24:40.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:24:40.047+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:24:40.047+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:24:40.062+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:24:40.058+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:24:40.063+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:24:40.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.048 seconds
+[2025-07-28T11:25:10.354+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:25:10.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:25:10.357+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:25:10.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:25:10.370+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:25:10.367+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:25:10.371+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:25:10.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.040 seconds
+[2025-07-28T11:25:40.621+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:25:40.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:25:40.624+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:25:40.624+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:25:40.638+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:25:40.635+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:25:40.639+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:25:40.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.044 seconds
+[2025-07-28T11:26:10.910+0000] {processor.py:161} INFO - Started process (PID=239) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:26:10.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:26:10.912+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:26:10.912+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:26:10.925+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:26:10.922+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:26:10.926+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:26:10.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.041 seconds
+[2025-07-28T11:26:41.179+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:26:41.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:26:41.182+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:26:41.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:26:41.196+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:26:41.193+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:26:41.197+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:26:41.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.043 seconds
+[2025-07-28T11:27:11.569+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:27:11.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:27:11.572+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:27:11.571+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:27:11.587+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:27:11.584+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:27:11.588+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:27:11.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.046 seconds
+[2025-07-28T11:27:41.898+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:27:41.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:27:41.901+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:27:41.901+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:27:41.918+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:27:41.914+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:27:41.919+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:27:41.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.047 seconds
+[2025-07-28T11:28:12.235+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:28:12.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:28:12.237+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:28:12.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:28:12.250+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:28:12.247+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:28:12.251+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:28:12.269+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.040 seconds
+[2025-07-28T11:28:42.581+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:28:42.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:28:42.585+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:28:42.584+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:28:42.598+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:28:42.595+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:28:42.599+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:28:42.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.042 seconds
+[2025-07-28T11:29:12.912+0000] {processor.py:161} INFO - Started process (PID=269) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:29:12.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:29:12.915+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:29:12.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:29:12.931+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:29:12.928+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:29:12.932+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:29:12.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.046 seconds
+[2025-07-28T11:29:43.172+0000] {processor.py:161} INFO - Started process (PID=274) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:29:43.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:29:43.175+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:29:43.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:29:43.188+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:29:43.185+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:29:43.189+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:29:43.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.039 seconds
+[2025-07-28T11:30:13.456+0000] {processor.py:161} INFO - Started process (PID=279) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:30:13.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:30:13.460+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:30:13.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:30:13.473+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:30:13.471+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:30:13.474+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:30:13.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.042 seconds
+[2025-07-28T11:30:43.792+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:30:43.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:30:43.797+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:30:43.796+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:30:43.821+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:30:43.816+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:30:43.823+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:30:43.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.078 seconds
+[2025-07-28T11:31:13.996+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:31:13.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:31:14.002+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:31:14.001+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:31:14.029+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:31:14.023+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:31:14.032+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:31:14.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.103 seconds
+[2025-07-28T11:31:44.222+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:31:44.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:31:44.227+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:31:44.227+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:31:44.250+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:31:44.246+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:31:44.251+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:31:44.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.063 seconds
+[2025-07-28T11:32:14.416+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:32:14.417+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:32:14.421+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:32:14.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:32:14.443+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:32:14.438+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:32:14.444+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:32:14.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.063 seconds
+[2025-07-28T11:32:44.647+0000] {processor.py:161} INFO - Started process (PID=304) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:32:44.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:32:44.655+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:32:44.654+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:32:44.680+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:32:44.674+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:32:44.682+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:32:44.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.070 seconds
+[2025-07-28T11:33:14.848+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:33:14.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:33:14.852+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:33:14.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:33:14.889+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:33:14.882+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:33:14.891+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:33:14.926+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.094 seconds
+[2025-07-28T11:33:45.109+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:33:45.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:33:45.112+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:33:45.112+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:33:45.135+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:33:45.129+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:33:45.137+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:33:45.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.060 seconds
+[2025-07-28T11:34:15.328+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:34:15.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:34:15.334+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:34:15.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:34:15.371+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:34:15.362+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:34:15.374+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:34:15.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.104 seconds
+[2025-07-28T11:34:45.607+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:34:45.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:34:45.610+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:34:45.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:34:45.624+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:34:45.621+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:34:45.625+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:34:45.643+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.044 seconds
+[2025-07-28T11:35:15.954+0000] {processor.py:161} INFO - Started process (PID=329) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:35:15.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:35:15.957+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:35:15.957+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:35:15.973+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:35:15.970+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:35:15.974+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:35:15.995+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.048 seconds
+[2025-07-28T11:35:46.160+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:35:46.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:35:46.163+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:35:46.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:35:46.179+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:35:46.176+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:35:46.180+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:35:46.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.049 seconds
+[2025-07-28T11:36:36.297+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:36:36.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:36:36.304+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:36:36.303+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:36:36.333+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:36:36.327+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:36:36.337+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:36:36.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.095 seconds
+[2025-07-28T11:37:06.584+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:37:06.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:37:06.587+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:37:06.587+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:37:06.604+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:37:06.600+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:37:06.605+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:37:06.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.051 seconds
+[2025-07-28T11:37:36.910+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:37:36.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:37:36.913+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:37:36.913+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:37:36.927+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:37:36.924+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:37:36.928+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:37:36.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.046 seconds
+[2025-07-28T11:38:07.131+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:38:07.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:38:07.133+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:38:07.133+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:38:07.147+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:38:07.144+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:38:07.148+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:38:07.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.051 seconds
+[2025-07-28T11:38:37.450+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:38:37.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:38:37.453+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:38:37.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:38:37.465+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:38:37.462+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:38:37.466+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:38:37.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.040 seconds
+[2025-07-28T11:39:07.587+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:39:07.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_forecasting_dag.py for tasks to queue
+[2025-07-28T11:39:07.590+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:39:07.589+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:39:07.604+0000] {logging_mixin.py:188} INFO - [2025-07-28T11:39:07.600+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/sales_forecasting_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/sales_forecasting_dag.py", line 5, in <module>
+    from scripts.train_model import train_sales_model
+ModuleNotFoundError: No module named 'scripts.train_model'
+[2025-07-28T11:39:07.605+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sales_forecasting_dag.py
+[2025-07-28T11:39:07.626+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_forecasting_dag.py took 0.044 seconds
