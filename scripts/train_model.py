@@ -1,9 +1,11 @@
 import pandas as pd
 from prophet import Prophet
 import mlflow
+import mlflow.sklearn
 from sklearn.metrics import mean_squared_error
 import numpy as np
 import logging
+import os 
 
 # Define paths inside the container
 DATA_PATH = "/opt/airflow/data/train.csv"
