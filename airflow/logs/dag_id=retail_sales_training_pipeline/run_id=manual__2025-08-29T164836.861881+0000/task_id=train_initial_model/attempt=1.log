@@ -1,0 +1,116 @@
+[2025-08-29T16:48:44.875+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-29T16:48:44.912+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_sales_training_pipeline.train_initial_model manual__2025-08-29T16:48:36.861881+00:00 [queued]>
+[2025-08-29T16:48:44.922+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_sales_training_pipeline.train_initial_model manual__2025-08-29T16:48:36.861881+00:00 [queued]>
+[2025-08-29T16:48:44.923+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-08-29T16:48:44.941+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): train_initial_model> on 2025-08-29 16:48:36.861881+00:00
+[2025-08-29T16:48:44.948+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_sales_training_pipeline', 'train_initial_model', 'manual__2025-08-29T16:48:36.861881+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/model_training_dag.py', '--cfg-path', '/tmp/tmpixmnkj5r']
+[2025-08-29T16:48:44.950+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask train_initial_model
+[2025-08-29T16:48:44.951+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=186) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-08-29T16:48:44.951+0000] {standard_task_runner.py:63} INFO - Started process 187 to run task
+[2025-08-29T16:48:44.994+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_sales_training_pipeline.train_initial_model manual__2025-08-29T16:48:36.861881+00:00 [running]> on host cd2879d5785d
+[2025-08-29T16:48:45.076+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_sales_training_pipeline' AIRFLOW_CTX_TASK_ID='train_initial_model' AIRFLOW_CTX_EXECUTION_DATE='2025-08-29T16:48:36.861881+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-29T16:48:36.861881+00:00'
+[2025-08-29T16:48:45.077+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-29T16:48:45.093+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-29T16:48:45.094+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/train_model.py']
+[2025-08-29T16:48:45.103+0000] {subprocess.py:86} INFO - Output:
+[2025-08-29T16:48:46.918+0000] {subprocess.py:93} INFO - Importing plotly failed. Interactive plots will not work.
+[2025-08-29T16:48:49.132+0000] {subprocess.py:93} INFO - 2025/08/29 16:48:49 INFO mlflow.tracking.fluent: Experiment with name 'Retail Sales Forecasting - Docker' does not exist. Creating a new experiment.
+[2025-08-29T16:48:49.892+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:49,892 - INFO - MLflow experiment set.
+[2025-08-29T16:48:49.893+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:49,892 - INFO - Loading data from /opt/***/data/processed/initial_train.csv...
+[2025-08-29T16:48:50.223+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,223 - INFO - Data prepared. Shape: (1095, 4)
+[2025-08-29T16:48:50.270+0000] {subprocess.py:93} INFO - 2025/08/29 16:48:50 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+[2025-08-29T16:48:50.270+0000] {subprocess.py:93} INFO - The git executable must be specified in one of the following ways:
+[2025-08-29T16:48:50.271+0000] {subprocess.py:93} INFO -     - be included in your $PATH
+[2025-08-29T16:48:50.272+0000] {subprocess.py:93} INFO -     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+[2025-08-29T16:48:50.272+0000] {subprocess.py:93} INFO -     - explicitly set via git.refresh(<full-path-to-git-executable>)
+[2025-08-29T16:48:50.273+0000] {subprocess.py:93} INFO - 
+[2025-08-29T16:48:50.273+0000] {subprocess.py:93} INFO - All git commands will error until this is rectified.
+[2025-08-29T16:48:50.274+0000] {subprocess.py:93} INFO - 
+[2025-08-29T16:48:50.274+0000] {subprocess.py:93} INFO - This initial message can be silenced or aggravated in the future by setting the
+[2025-08-29T16:48:50.275+0000] {subprocess.py:93} INFO - $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+[2025-08-29T16:48:50.275+0000] {subprocess.py:93} INFO -     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+[2025-08-29T16:48:50.276+0000] {subprocess.py:93} INFO -     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+[2025-08-29T16:48:50.276+0000] {subprocess.py:93} INFO -     - error|e|exception|raise|r|2: for a raised exception
+[2025-08-29T16:48:50.277+0000] {subprocess.py:93} INFO - 
+[2025-08-29T16:48:50.277+0000] {subprocess.py:93} INFO - Example:
+[2025-08-29T16:48:50.278+0000] {subprocess.py:93} INFO -     export GIT_PYTHON_REFRESH=quiet
+[2025-08-29T16:48:50.278+0000] {subprocess.py:93} INFO - 
+[2025-08-29T16:48:50.777+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,777 - INFO - Starting MLflow run: unruly-frog-390
+[2025-08-29T16:48:50.798+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,797 - INFO - Forecast Horizon: 90 days
+[2025-08-29T16:48:50.799+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,798 - INFO - Training data size: 1005, Validation data size: 90
+[2025-08-29T16:48:50.826+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,826 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+[2025-08-29T16:48:50.857+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,856 - DEBUG - input tempfile: /tmp/tmpbafty2m8/mhx6hf7u.json
+[2025-08-29T16:48:50.930+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,930 - DEBUG - input tempfile: /tmp/tmpbafty2m8/binxsvhe.json
+[2025-08-29T16:48:50.931+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,931 - DEBUG - idx 0
+[2025-08-29T16:48:50.932+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,931 - DEBUG - running CmdStan, num_threads: None
+[2025-08-29T16:48:50.932+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,931 - DEBUG - CmdStan args: ['/home/***/.local/lib/python3.12/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=75232', 'data', 'file=/tmp/tmpbafty2m8/mhx6hf7u.json', 'init=/tmp/tmpbafty2m8/binxsvhe.json', 'output', 'file=/tmp/tmpbafty2m8/prophet_modelxadflpq1/prophet_model-20250829164850.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2025-08-29T16:48:50.933+0000] {subprocess.py:93} INFO - 16:48:50 - cmdstanpy - INFO - Chain [1] start processing
+[2025-08-29T16:48:50.934+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,931 - INFO - Chain [1] start processing
+[2025-08-29T16:48:50.976+0000] {subprocess.py:93} INFO - 16:48:50 - cmdstanpy - INFO - Chain [1] done processing
+[2025-08-29T16:48:50.977+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,976 - INFO - Chain [1] done processing
+[2025-08-29T16:48:50.980+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:50,980 - INFO - Prophet model fitting complete.
+[2025-08-29T16:48:51.218+0000] {subprocess.py:93} INFO - 2025-08-29 16:48:51,218 - INFO - RMSE: 4.7054, MAE: 3.7648
+[2025-08-29T16:48:51.847+0000] {subprocess.py:93} INFO - 2025/08/29 16:48:51 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+[2025-08-29T16:48:51.918+0000] {subprocess.py:93} INFO - 🏃 View run unruly-frog-390 at: http://mlflow-server:5000/#/experiments/1/runs/44b3b135610d4fdcadcaa7150b8584da
+[2025-08-29T16:48:51.918+0000] {subprocess.py:93} INFO - 🧪 View experiment at: http://mlflow-server:5000/#/experiments/1
+[2025-08-29T16:48:51.919+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-08-29T16:48:51.920+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/train_model.py", line 85, in <module>
+[2025-08-29T16:48:51.921+0000] {subprocess.py:93} INFO -     train_sales_model()
+[2025-08-29T16:48:51.922+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/train_model.py", line 78, in train_sales_model
+[2025-08-29T16:48:51.924+0000] {subprocess.py:93} INFO -     mlflow.prophet.log_model(model, "prophet-initial-model")
+[2025-08-29T16:48:51.924+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/prophet/__init__.py", line 278, in log_model
+[2025-08-29T16:48:51.925+0000] {subprocess.py:93} INFO -     return Model.log(
+[2025-08-29T16:48:51.926+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^
+[2025-08-29T16:48:51.927+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/models/model.py", line 1169, in log
+[2025-08-29T16:48:51.927+0000] {subprocess.py:93} INFO -     model = _create_logged_model(
+[2025-08-29T16:48:51.928+0000] {subprocess.py:93} INFO -             ^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.929+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/tracking/fluent.py", line 2305, in _create_logged_model
+[2025-08-29T16:48:51.929+0000] {subprocess.py:93} INFO -     return MlflowClient()._create_logged_model(
+[2025-08-29T16:48:51.930+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.930+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/tracking/client.py", line 5394, in _create_logged_model
+[2025-08-29T16:48:51.931+0000] {subprocess.py:93} INFO -     return self._tracking_client.create_logged_model(
+[2025-08-29T16:48:51.932+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.932+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/telemetry/track.py", line 29, in wrapper
+[2025-08-29T16:48:51.933+0000] {subprocess.py:93} INFO -     result = func(*args, **kwargs)
+[2025-08-29T16:48:51.934+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.934+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/tracking/_tracking_service/client.py", line 860, in create_logged_model
+[2025-08-29T16:48:51.935+0000] {subprocess.py:93} INFO -     return self.store.create_logged_model(
+[2025-08-29T16:48:51.936+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.937+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 824, in create_logged_model
+[2025-08-29T16:48:51.938+0000] {subprocess.py:93} INFO -     response_proto = self._call_endpoint(CreateLoggedModel, req_body)
+[2025-08-29T16:48:51.938+0000] {subprocess.py:93} INFO -                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.939+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/store/tracking/rest_store.py", line 134, in _call_endpoint
+[2025-08-29T16:48:51.940+0000] {subprocess.py:93} INFO -     return call_endpoint(
+[2025-08-29T16:48:51.941+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.941+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 554, in call_endpoint
+[2025-08-29T16:48:51.942+0000] {subprocess.py:93} INFO -     response = verify_rest_response(response, endpoint)
+[2025-08-29T16:48:51.943+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-29T16:48:51.944+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/mlflow/utils/rest_utils.py", line 314, in verify_rest_response
+[2025-08-29T16:48:51.945+0000] {subprocess.py:93} INFO -     raise MlflowException(
+[2025-08-29T16:48:51.945+0000] {subprocess.py:93} INFO - mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/logged-models failed with error code 404 != 200. Response body: '<!doctype html>
+[2025-08-29T16:48:51.946+0000] {subprocess.py:93} INFO - <html lang=en>
+[2025-08-29T16:48:51.947+0000] {subprocess.py:93} INFO - <title>404 Not Found</title>
+[2025-08-29T16:48:51.947+0000] {subprocess.py:93} INFO - <h1>Not Found</h1>
+[2025-08-29T16:48:51.948+0000] {subprocess.py:93} INFO - <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+[2025-08-29T16:48:51.948+0000] {subprocess.py:93} INFO - '
+[2025-08-29T16:48:52.394+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-08-29T16:48:52.396+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-29T16:48:52.411+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-08-29T16:48:52.418+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=retail_sales_training_pipeline, task_id=train_initial_model, run_id=manual__2025-08-29T16:48:36.861881+00:00, execution_date=20250829T164836, start_date=20250829T164844, end_date=20250829T164852
+[2025-08-29T16:48:52.439+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3 for task train_initial_model (Bash command failed. The command returned a non-zero exit code 1.; 187)
+[2025-08-29T16:48:52.475+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-08-29T16:48:52.494+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-29T16:48:52.500+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

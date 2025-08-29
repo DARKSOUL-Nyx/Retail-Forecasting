@@ -1,0 +1,61 @@
+[2025-08-29T13:44:00.379+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-29T13:44:00.433+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_sales_training_pipeline.train_initial_model manual__2025-08-29T13:43:52.284258+00:00 [queued]>
+[2025-08-29T13:44:00.447+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_sales_training_pipeline.train_initial_model manual__2025-08-29T13:43:52.284258+00:00 [queued]>
+[2025-08-29T13:44:00.448+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-08-29T13:44:00.474+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): train_initial_model> on 2025-08-29 13:43:52.284258+00:00
+[2025-08-29T13:44:00.485+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_sales_training_pipeline', 'train_initial_model', 'manual__2025-08-29T13:43:52.284258+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/model_training_dag.py', '--cfg-path', '/tmp/tmp3ureahls']
+[2025-08-29T13:44:00.488+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask train_initial_model
+[2025-08-29T13:44:00.491+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=271) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-08-29T13:44:00.492+0000] {standard_task_runner.py:63} INFO - Started process 272 to run task
+[2025-08-29T13:44:00.561+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_sales_training_pipeline.train_initial_model manual__2025-08-29T13:43:52.284258+00:00 [running]> on host ba296153ad9d
+[2025-08-29T13:44:00.674+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_sales_training_pipeline' AIRFLOW_CTX_TASK_ID='train_initial_model' AIRFLOW_CTX_EXECUTION_DATE='2025-08-29T13:43:52.284258+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-29T13:43:52.284258+00:00'
+[2025-08-29T13:44:00.675+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-29T13:44:00.705+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-29T13:44:00.707+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/train_model.py']
+[2025-08-29T13:44:00.721+0000] {subprocess.py:86} INFO - Output:
+[2025-08-29T13:44:03.208+0000] {subprocess.py:93} INFO - Importing plotly failed. Interactive plots will not work.
+[2025-08-29T13:44:06.435+0000] {subprocess.py:93} INFO - INFO:root:Loading data from /opt/***/data/processed/initial_train.csv...
+[2025-08-29T13:44:06.804+0000] {subprocess.py:93} INFO - INFO:root:Data prepared. Shape: (1095, 4)
+[2025-08-29T13:44:06.938+0000] {subprocess.py:93} INFO - 2025/08/29 13:44:06 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+[2025-08-29T13:44:06.939+0000] {subprocess.py:93} INFO - The git executable must be specified in one of the following ways:
+[2025-08-29T13:44:06.940+0000] {subprocess.py:93} INFO -     - be included in your $PATH
+[2025-08-29T13:44:06.940+0000] {subprocess.py:93} INFO -     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+[2025-08-29T13:44:06.941+0000] {subprocess.py:93} INFO -     - explicitly set via git.refresh(<full-path-to-git-executable>)
+[2025-08-29T13:44:06.942+0000] {subprocess.py:93} INFO - 
+[2025-08-29T13:44:06.942+0000] {subprocess.py:93} INFO - All git commands will error until this is rectified.
+[2025-08-29T13:44:06.943+0000] {subprocess.py:93} INFO - 
+[2025-08-29T13:44:06.943+0000] {subprocess.py:93} INFO - This initial message can be silenced or aggravated in the future by setting the
+[2025-08-29T13:44:06.944+0000] {subprocess.py:93} INFO - $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+[2025-08-29T13:44:06.945+0000] {subprocess.py:93} INFO -     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+[2025-08-29T13:44:06.945+0000] {subprocess.py:93} INFO -     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+[2025-08-29T13:44:06.946+0000] {subprocess.py:93} INFO -     - error|e|exception|raise|r|2: for a raised exception
+[2025-08-29T13:44:06.947+0000] {subprocess.py:93} INFO - 
+[2025-08-29T13:44:06.948+0000] {subprocess.py:93} INFO - Example:
+[2025-08-29T13:44:06.949+0000] {subprocess.py:93} INFO -     export GIT_PYTHON_REFRESH=quiet
+[2025-08-29T13:44:06.950+0000] {subprocess.py:93} INFO - 
+[2025-08-29T13:44:07.324+0000] {subprocess.py:93} INFO - INFO:root:Starting MLflow run...
+[2025-08-29T13:44:07.438+0000] {subprocess.py:93} INFO - INFO:prophet:Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+[2025-08-29T13:44:07.504+0000] {subprocess.py:93} INFO - DEBUG:cmdstanpy:input tempfile: /tmp/tmpwfd88xs4/caegswr0.json
+[2025-08-29T13:44:07.636+0000] {subprocess.py:93} INFO - DEBUG:cmdstanpy:input tempfile: /tmp/tmpwfd88xs4/ibw3d9ky.json
+[2025-08-29T13:44:07.638+0000] {subprocess.py:93} INFO - DEBUG:cmdstanpy:idx 0
+[2025-08-29T13:44:07.639+0000] {subprocess.py:93} INFO - DEBUG:cmdstanpy:running CmdStan, num_threads: None
+[2025-08-29T13:44:07.639+0000] {subprocess.py:93} INFO - DEBUG:cmdstanpy:CmdStan args: ['/home/***/.local/lib/python3.12/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=94662', 'data', 'file=/tmp/tmpwfd88xs4/caegswr0.json', 'init=/tmp/tmpwfd88xs4/ibw3d9ky.json', 'output', 'file=/tmp/tmpwfd88xs4/prophet_model9icsjdqr/prophet_model-20250829134407.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2025-08-29T13:44:07.640+0000] {subprocess.py:93} INFO - 13:44:07 - cmdstanpy - INFO - Chain [1] start processing
+[2025-08-29T13:44:07.641+0000] {subprocess.py:93} INFO - INFO:cmdstanpy:Chain [1] start processing
+[2025-08-29T13:44:07.749+0000] {subprocess.py:93} INFO - 13:44:07 - cmdstanpy - INFO - Chain [1] done processing
+[2025-08-29T13:44:07.750+0000] {subprocess.py:93} INFO - INFO:cmdstanpy:Chain [1] done processing
+[2025-08-29T13:44:08.345+0000] {subprocess.py:93} INFO - 2025/08/29 13:44:08 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+[2025-08-29T13:44:08.545+0000] {subprocess.py:93} INFO - ERROR:root:An error occurred during training: API request to endpoint /api/2.0/mlflow/logged-models failed with error code 404 != 200. Response body: '<!doctype html>
+[2025-08-29T13:44:08.545+0000] {subprocess.py:93} INFO - <html lang=en>
+[2025-08-29T13:44:08.547+0000] {subprocess.py:93} INFO - <title>404 Not Found</title>
+[2025-08-29T13:44:08.548+0000] {subprocess.py:93} INFO - <h1>Not Found</h1>
+[2025-08-29T13:44:08.548+0000] {subprocess.py:93} INFO - <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+[2025-08-29T13:44:08.549+0000] {subprocess.py:93} INFO - '
+[2025-08-29T13:44:08.549+0000] {subprocess.py:93} INFO - 🏃 View run fun-bat-996 at: http://mlflow-server:5000/#/experiments/192624320005104537/runs/8c26c1930a234e71b27ed8c83e20a94d
+[2025-08-29T13:44:08.550+0000] {subprocess.py:93} INFO - 🧪 View experiment at: http://mlflow-server:5000/#/experiments/192624320005104537
+[2025-08-29T13:44:08.924+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-29T13:44:08.925+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-29T13:44:08.955+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_sales_training_pipeline, task_id=train_initial_model, run_id=manual__2025-08-29T13:43:52.284258+00:00, execution_date=20250829T134352, start_date=20250829T134400, end_date=20250829T134408
+[2025-08-29T13:44:09.004+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-29T13:44:09.020+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-29T13:44:09.023+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

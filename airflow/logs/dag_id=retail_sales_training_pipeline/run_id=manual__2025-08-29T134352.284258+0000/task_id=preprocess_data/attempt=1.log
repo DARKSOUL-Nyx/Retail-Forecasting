@@ -1,0 +1,54 @@
+[2025-08-29T13:43:53.064+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-29T13:43:53.106+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_sales_training_pipeline.preprocess_data manual__2025-08-29T13:43:52.284258+00:00 [queued]>
+[2025-08-29T13:43:53.115+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_sales_training_pipeline.preprocess_data manual__2025-08-29T13:43:52.284258+00:00 [queued]>
+[2025-08-29T13:43:53.115+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-08-29T13:43:53.131+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): preprocess_data> on 2025-08-29 13:43:52.284258+00:00
+[2025-08-29T13:43:53.138+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retail_sales_training_pipeline', 'preprocess_data', 'manual__2025-08-29T13:43:52.284258+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/model_training_dag.py', '--cfg-path', '/tmp/tmp9nhle9o2']
+[2025-08-29T13:43:53.140+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask preprocess_data
+[2025-08-29T13:43:53.143+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=260) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-08-29T13:43:53.144+0000] {standard_task_runner.py:63} INFO - Started process 261 to run task
+[2025-08-29T13:43:53.192+0000] {task_command.py:426} INFO - Running <TaskInstance: retail_sales_training_pipeline.preprocess_data manual__2025-08-29T13:43:52.284258+00:00 [running]> on host ba296153ad9d
+[2025-08-29T13:43:53.297+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retail_sales_training_pipeline' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2025-08-29T13:43:52.284258+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-29T13:43:52.284258+00:00'
+[2025-08-29T13:43:53.298+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-29T13:43:53.344+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-29T13:43:53.345+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/preprocess_data.py']
+[2025-08-29T13:43:53.356+0000] {subprocess.py:86} INFO - Output:
+[2025-08-29T13:43:55.389+0000] {subprocess.py:93} INFO - INFO:root:Starting preprocessing of /opt/***/data/raw/train.csv...
+[2025-08-29T13:43:58.305+0000] {subprocess.py:93} INFO - INFO:root:Saved initial training data (547500 rows) to /opt/***/data/processed/initial_train.csv
+[2025-08-29T13:43:58.352+0000] {subprocess.py:93} INFO - /opt/***/scripts/preprocess_data.py:38: SettingWithCopyWarning:
+[2025-08-29T13:43:58.353+0000] {subprocess.py:93} INFO - A value is trying to be set on a copy of a slice from a DataFrame.
+[2025-08-29T13:43:58.354+0000] {subprocess.py:93} INFO - Try using .loc[row_indexer,col_indexer] = value instead
+[2025-08-29T13:43:58.355+0000] {subprocess.py:93} INFO - 
+[2025-08-29T13:43:58.355+0000] {subprocess.py:93} INFO - See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2025-08-29T13:43:58.356+0000] {subprocess.py:93} INFO -   incremental_df['year_month'] = incremental_df['date'].dt.to_period('M')
+[2025-08-29T13:43:58.469+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-01 to /opt/***/data/processed/sales_2016-01.csv
+[2025-08-29T13:43:58.538+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-02 to /opt/***/data/processed/sales_2016-02.csv
+[2025-08-29T13:43:58.601+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-03 to /opt/***/data/processed/sales_2016-03.csv
+[2025-08-29T13:43:58.673+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-04 to /opt/***/data/processed/sales_2016-04.csv
+[2025-08-29T13:43:58.736+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-05 to /opt/***/data/processed/sales_2016-05.csv
+[2025-08-29T13:43:58.801+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-06 to /opt/***/data/processed/sales_2016-06.csv
+[2025-08-29T13:43:58.865+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-07 to /opt/***/data/processed/sales_2016-07.csv
+[2025-08-29T13:43:58.936+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-08 to /opt/***/data/processed/sales_2016-08.csv
+[2025-08-29T13:43:58.995+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-09 to /opt/***/data/processed/sales_2016-09.csv
+[2025-08-29T13:43:59.054+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-10 to /opt/***/data/processed/sales_2016-10.csv
+[2025-08-29T13:43:59.113+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-11 to /opt/***/data/processed/sales_2016-11.csv
+[2025-08-29T13:43:59.172+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2016-12 to /opt/***/data/processed/sales_2016-12.csv
+[2025-08-29T13:43:59.229+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-01 to /opt/***/data/processed/sales_2017-01.csv
+[2025-08-29T13:43:59.291+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-02 to /opt/***/data/processed/sales_2017-02.csv
+[2025-08-29T13:43:59.349+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-03 to /opt/***/data/processed/sales_2017-03.csv
+[2025-08-29T13:43:59.408+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-04 to /opt/***/data/processed/sales_2017-04.csv
+[2025-08-29T13:43:59.466+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-05 to /opt/***/data/processed/sales_2017-05.csv
+[2025-08-29T13:43:59.536+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-06 to /opt/***/data/processed/sales_2017-06.csv
+[2025-08-29T13:43:59.600+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-07 to /opt/***/data/processed/sales_2017-07.csv
+[2025-08-29T13:43:59.667+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-08 to /opt/***/data/processed/sales_2017-08.csv
+[2025-08-29T13:43:59.726+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-09 to /opt/***/data/processed/sales_2017-09.csv
+[2025-08-29T13:43:59.784+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-10 to /opt/***/data/processed/sales_2017-10.csv
+[2025-08-29T13:43:59.839+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-11 to /opt/***/data/processed/sales_2017-11.csv
+[2025-08-29T13:43:59.899+0000] {subprocess.py:93} INFO - INFO:root:Saved incremental data for 2017-12 to /opt/***/data/processed/sales_2017-12.csv
+[2025-08-29T13:43:59.900+0000] {subprocess.py:93} INFO - INFO:root:Preprocessing complete!
+[2025-08-29T13:43:59.982+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-29T13:43:59.984+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-29T13:44:00.010+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retail_sales_training_pipeline, task_id=preprocess_data, run_id=manual__2025-08-29T13:43:52.284258+00:00, execution_date=20250829T134352, start_date=20250829T134353, end_date=20250829T134400
+[2025-08-29T13:44:00.067+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-29T13:44:00.088+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-29T13:44:00.092+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
